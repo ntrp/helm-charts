@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  common:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: removed
+          description: "**BREAKING**: Removed support for HorizontalPodAutoscaler"
+        - kind: added
+          description: Added support for `httpGet` probes
+        - kind: added
+          description: Added support for setting labels / annotations on volumeClaimTemplates
+        - kind: added
+          description: Support services have extraSelectorLabels
+        - kind: changed
+          description: "**BREAKING**: Restructure of template components. All Helm template names have changed!"
+        - kind: changed
+          description: "**BREAKING**: Raised minimum supported k8s version to 1.22"
+        - kind: changed
+          description: "**BREAKING**: Renamed `configmap` key to `configMaps`"
+        - kind: changed
+          description: "**BREAKING**: Moved `serviceMonitor` from `service` to its own key"
+        - kind: changed
+          description: "**BREAKING**: Renamed `secret` key to `secrets`, which now works similar to `configMaps`"
+        - kind: changed
+          description: Updated code-server image to v4.8.2
+        - kind: changed
+          description: Updated gluetun image to v3.32.0
+        - kind: fixed
+          description: Fix NOTES always showing ingress protocol as http
+    apiVersion: v2
+    created: "2022-11-17T19:25:50.965676594Z"
+    description: Function library for Helm charts
+    digest: 9be8d560b6d77a462d84ef50c92700c8e0c0043cb9393b8dc3f35acda1e6e660
+    home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
+    keywords:
+    - common
+    - library
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: me@ntrp.dev
+      name: ntrp
+    name: common
+    type: library
+    urls:
+    - https://ntrp.github.io/helm-charts/library/common-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-11-17T19:25:50.962397647Z"

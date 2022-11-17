@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-17T19:57:31.040047164Z"
+    created: "2022-11-17T19:58:40.281824382Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -54,7 +54,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2022-11-17T19:57:31.03695095Z"
+    created: "2022-11-17T19:58:40.279190808Z"
     description: Function library for Helm charts
     digest: a9f65ee38d07e9e682590caf99190e9aae11f996115442d0c8d090552d91dc01
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -80,13 +80,13 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-17T19:57:31.034130037Z"
+    created: "2022-11-17T19:58:40.276736333Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
       version: 1.0.1
     description: Usenet downloader
-    digest: ff97a6b2aa7d280a7d21f322d15808a34a846b36f933afaa2b9e5e6b72d0b779
+    digest: 02ab2de7759d2a66c1348bd490a0e3ca62b8e342add6e3f10c37888ca39004ef
     kubeVersion: '>=1.22.0-0'
     maintainers:
     - email: ivan.g.ortolan@gmail.com
@@ -95,4 +95,4 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/sabnzbd-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-17T19:57:31.03036952Z"
+generated: "2022-11-17T19:58:40.272572175Z"

@@ -1,6 +1,6 @@
 {{- /* The main container included in the controller */ -}}
-{{- define "bjw-s.common.lib.controller.mainContainer" -}}
-- name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
+{{- define "ntrp.common.lib.controller.mainContainer" -}}
+- name: {{ include "ntrp.common.lib.chart.names.fullname" . }}
   image: {{ printf "%s:%s" .Values.image.repository (default .Chart.AppVersion .Values.image.tag) | quote }}
   imagePullPolicy: {{ .Values.image.pullPolicy }}
   {{- with .Values.command }}
@@ -36,7 +36,7 @@
 
   {{- with .Values.env }}
   env:
-    {{- get (fromYaml (include "bjw-s.common.lib.container.envVars" $)) "env" | toYaml | nindent 4 -}}
+    {{- get (fromYaml (include "ntrp.common.lib.container.envVars" $)) "env" | toYaml | nindent 4 -}}
   {{- end }}
   {{- if or .Values.envFrom .Values.secret }}
   envFrom:
@@ -45,16 +45,16 @@
     {{- end }}
     {{- if .Values.secret }}
     - secretRef:
-        name: {{ include "bjw-s.common.lib.chart.names.fullname" . }}
+        name: {{ include "ntrp.common.lib.chart.names.fullname" . }}
     {{- end }}
   {{- end }}
   ports:
-  {{- include "bjw-s.common.lib.container.ports" . | trim | nindent 4 }}
-  {{- with (include "bjw-s.common.lib.container.volumeMounts" . | trim) }}
+  {{- include "ntrp.common.lib.container.ports" . | trim | nindent 4 }}
+  {{- with (include "ntrp.common.lib.container.volumeMounts" . | trim) }}
   volumeMounts:
     {{- nindent 4 . }}
   {{- end }}
-  {{- include "bjw-s.common.lib.container.probes" . | trim | nindent 2 }}
+  {{- include "ntrp.common.lib.container.probes" . | trim | nindent 2 }}
   {{- with .Values.resources }}
   resources:
     {{- toYaml . | nindent 4 }}

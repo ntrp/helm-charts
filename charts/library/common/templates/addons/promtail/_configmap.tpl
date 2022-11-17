@@ -1,7 +1,7 @@
 {{/*
 The promtail config to be included.
 */}}
-{{- define "bjw-s.common.addon.promtail.configmap" -}}
+{{- define "ntrp.common.addon.promtail.configmap" -}}
 promtail.yaml: |
   server:
     http_listen_port: 9080

@@ -1,12 +1,12 @@
 {{- /*
 The pod definition included in the controller.
 */ -}}
-{{- define "bjw-s.common.lib.controller.pod" -}}
+{{- define "ntrp.common.lib.controller.pod" -}}
   {{- with .Values.imagePullSecrets }}
 imagePullSecrets:
     {{- toYaml . | nindent 2 }}
   {{- end }}
-serviceAccountName: {{ include "bjw-s.common.lib.chart.names.serviceAccountName" . }}
+serviceAccountName: {{ include "ntrp.common.lib.chart.names.serviceAccountName" . }}
 automountServiceAccountToken: {{ .Values.automountServiceAccountToken }}
   {{- with .Values.podSecurityContext }}
 securityContext:
@@ -52,7 +52,7 @@ initContainers:
       {{- end }}
       {{- if $container.env -}}
         {{- $_ := set $ "ObjectValues" (dict "envVars" $container.env) -}}
-        {{- $newEnv := fromYaml (include "bjw-s.common.lib.container.envVars" $) -}}
+        {{- $newEnv := fromYaml (include "ntrp.common.lib.container.envVars" $) -}}
         {{- $_ := unset $.ObjectValues "envVars" -}}
         {{- $_ := set $container "env" $newEnv.env }}
       {{- end }}
@@ -61,7 +61,7 @@ initContainers:
     {{- tpl (toYaml $initContainers) $ | nindent 2 }}
   {{- end }}
 containers:
-  {{- include "bjw-s.common.lib.controller.mainContainer" . | nindent 2 }}
+  {{- include "ntrp.common.lib.controller.mainContainer" . | nindent 2 }}
   {{- with .Values.additionalContainers }}
     {{- $additionalContainers := list }}
     {{- range $name, $container := . }}
@@ -70,7 +70,7 @@ containers:
       {{- end }}
       {{- if $container.env -}}
         {{- $_ := set $ "ObjectValues" (dict "envVars" $container.env) -}}
-        {{- $newEnv := fromYaml (include "bjw-s.common.lib.container.envVars" $) -}}
+        {{- $newEnv := fromYaml (include "ntrp.common.lib.container.envVars" $) -}}
         {{- $_ := set $container "env" $newEnv.env }}
         {{- $_ := unset $.ObjectValues "envVars" -}}
       {{- end }}
@@ -78,7 +78,7 @@ containers:
     {{- end }}
     {{- tpl (toYaml $additionalContainers) $ | nindent 2 }}
   {{- end }}
-  {{- with (include "bjw-s.common.lib.controller.volumes" . | trim) }}
+  {{- with (include "ntrp.common.lib.controller.volumes" . | trim) }}
 volumes:
     {{- nindent 2 . }}
   {{- end }}

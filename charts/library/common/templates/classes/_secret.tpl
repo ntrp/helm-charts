@@ -2,8 +2,8 @@
 This template serves as a blueprint for all Secret objects that are created
 within the common library.
 */}}
-{{- define "bjw-s.common.class.secret" -}}
-  {{- $fullName := include "bjw-s.common.lib.chart.names.fullname" . -}}
+{{- define "ntrp.common.class.secret" -}}
+  {{- $fullName := include "ntrp.common.lib.chart.names.fullname" . -}}
   {{- $secretName := $fullName -}}
   {{- $values := .Values.configmap -}}
 
@@ -21,10 +21,10 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: {{ $secretName }}
-  {{- with (merge ($values.labels | default dict) (include "bjw-s.common.lib.metadata.allLabels" $ | fromYaml)) }}
+  {{- with (merge ($values.labels | default dict) (include "ntrp.common.lib.metadata.allLabels" $ | fromYaml)) }}
   labels: {{- toYaml . | nindent 4 }}
   {{- end }}
-  {{- with (merge ($values.annotations | default dict) (include "bjw-s.common.lib.metadata.globalAnnotations" $ | fromYaml)) }}
+  {{- with (merge ($values.annotations | default dict) (include "ntrp.common.lib.metadata.globalAnnotations" $ | fromYaml)) }}
   annotations: {{- toYaml . | nindent 4 }}
   {{- end }}
 stringData:

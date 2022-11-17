@@ -1,14 +1,14 @@
 ---
 
 # Project information
-site_name: bjw-s | Helm charts | Docs
-site_description: Docs for the bjw-s Helm charts repository
-site_author: bjw-s
-site_url: https://bjw-s.github.io/helm-charts/docs
+site_name: ntrp | Helm charts | Docs
+site_description: Docs for the ntrp Helm charts repository
+site_author: ntrp
+site_url: https://ntrp.github.io/helm-charts/docs
 
 # Repository
-repo_name: bjw-s/helm-charts
-repo_url: https://github.com/bjw-s/helm-charts
+repo_name: ntrp/helm-charts
+repo_url: https://github.com/ntrp/helm-charts
 edit_uri: ""
 
 # Configuration
@@ -55,7 +55,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/bjw-s
+      link: https://github.com/ntrp
     - icon: fontawesome/brands/discord
       link: https://discord.gg/sTMX7Vh
 

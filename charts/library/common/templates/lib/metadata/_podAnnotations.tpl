@@ -1,5 +1,5 @@
 {{/* Determine the Pod annotations used in the controller */}}
-{{- define "bjw-s.common.lib.metadata.podAnnotations" -}}
+{{- define "ntrp.common.lib.metadata.podAnnotations" -}}
   {{- if .Values.podAnnotations -}}
     {{- tpl (toYaml .Values.podAnnotations) . | nindent 0 -}}
   {{- end -}}

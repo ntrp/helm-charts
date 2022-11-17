@@ -1,9 +1,9 @@
-{{- define "bjw-s.common.lib.controller.metadata.labels" -}}
+{{- define "ntrp.common.lib.controller.metadata.labels" -}}
   {{-
     $labels := (
       merge
         (.Values.controller.labels | default dict)
-        (include "bjw-s.common.lib.metadata.allLabels" $ | fromYaml)
+        (include "ntrp.common.lib.metadata.allLabels" $ | fromYaml)
     )
   -}}
   {{- with $labels -}}
@@ -11,12 +11,12 @@
   {{- end -}}
 {{- end -}}
 
-{{- define "bjw-s.common.lib.controller.metadata.annotations" -}}
+{{- define "ntrp.common.lib.controller.metadata.annotations" -}}
   {{-
     $annotations := (
       merge
         (.Values.controller.annotations | default dict)
-        (include "bjw-s.common.lib.metadata.globalAnnotations" $ | fromYaml)
+        (include "ntrp.common.lib.metadata.globalAnnotations" $ | fromYaml)
     )
   -}}
   {{- with $annotations -}}

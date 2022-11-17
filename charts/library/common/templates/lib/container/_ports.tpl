@@ -1,7 +1,7 @@
 {{/*
 Ports included by the controller.
 */}}
-{{- define "bjw-s.common.lib.container.ports" -}}
+{{- define "ntrp.common.lib.container.ports" -}}
   {{- $ports := list -}}
   {{- range .Values.service -}}
     {{- if .enabled -}}

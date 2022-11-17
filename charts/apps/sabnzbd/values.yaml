@@ -12,4 +12,4 @@ service:
   main:
     ports:
       http:
-        targetPort: 8080
+        port: 8080

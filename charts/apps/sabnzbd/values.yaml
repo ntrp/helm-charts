@@ -7,3 +7,9 @@ image:
 persistence:
   config:
     enabled: true
+
+service:
+  main:
+    ports:
+      http:
+        targetPort: 8080

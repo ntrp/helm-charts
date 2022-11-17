@@ -11,7 +11,7 @@ keywords:
 home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
 maintainers:
   - name: ntrp
-    email: me@ntrp.dev
+    email: ivan.g.ortolan@gmail.com
 annotations:
   artifacthub.io/changes: |-
     - kind: removed

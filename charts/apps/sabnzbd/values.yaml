@@ -1,0 +1,27 @@
+---
+image:
+  repository: lscr.io/linuxserver/sabnzbd
+  tag: 3.7.0
+  pullPolicy: IfNotPresent
+
+persistence:
+  config:
+    enabled: true
+    type: hostPath
+    hostPath: /data/system/sabnzbd/config
+  system:
+    enabled: true
+    type: hostPath
+    hostPath: /data/system/sabnzbd/incomplete
+    setPermissions: false
+    mountPath: /incomplete-downloads
+    hostPathType: ""
+    readOnly: false
+  media:
+    enabled: true
+    type: hostPath
+    hostPath: /data/tank/media/sabnzbd/complete
+    setPermissions: false
+    mountPath: /downloads
+    hostPathType: ""
+    readOnly: false

@@ -28,5 +28,3 @@ OWNERS
 
 # helm unit tests
 tests/
-charts/
-Chart.lock

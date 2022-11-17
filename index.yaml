@@ -1,5 +1,31 @@
 apiVersion: v1
 entries:
+  app-template:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            **BREAKING**: Updated library version to 1.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    created: "2022-11-17T19:27:15.999124269Z"
+    dependencies:
+    - name: common
+      repository: https://ntrp.github.io/helm-charts
+      version: 1.0.1
+    description: A common powered chart template. This can be useful for small projects
+      that don't have their own chart.
+    digest: b9b1f192767715fb5dec47e237820df8c814593510478133b457ab44742abafd
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: me@ntrp.dev
+      name: ntrp
+    name: app-template
+    urls:
+    - https://ntrp.github.io/helm-charts/other/app-template-1.0.1.tgz
+    version: 1.0.1
   common:
   - annotations:
       artifacthub.io/changes: |-
@@ -28,7 +54,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2022-11-17T19:25:50.965676594Z"
+    created: "2022-11-17T19:27:15.995894259Z"
     description: Function library for Helm charts
     digest: 9be8d560b6d77a462d84ef50c92700c8e0c0043cb9393b8dc3f35acda1e6e660
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -44,4 +70,4 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/library/common-1.0.1.tgz
     version: 1.0.1
-generated: "2022-11-17T19:25:50.962397647Z"
+generated: "2022-11-17T19:27:15.992757549Z"

@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.991525269Z"
+    created: "2022-11-18T10:40:42.939542422Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -26,6 +26,31 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/other/app-template-1.0.1.tgz
     version: 1.0.1
+  autobrr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            **BREAKING**: Updated library version to 1.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    created: "2022-11-18T10:40:42.910259554Z"
+    dependencies:
+    - name: common
+      repository: https://ntrp.github.io/helm-charts
+      version: 1.0.1
+    description: autobrr is the modern download automation tool for torrents.
+    digest: ee81583fb245f6d58559ed10fb4ee05609f7b80307de271515115ffb0b52da36
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: ivan.g.ortolan@gmail.com
+      name: ntrp
+    name: autobrr
+    urls:
+    - https://ntrp.github.io/helm-charts/apps/autobrr-1.0.0.tgz
+    version: 1.0.0
   bazarr:
   - annotations:
       artifacthub.io/changes: |-
@@ -36,7 +61,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.953201099Z"
+    created: "2022-11-18T10:40:42.912942679Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -80,7 +105,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2022-11-18T10:39:33.988762628Z"
+    created: "2022-11-18T10:40:42.936920498Z"
     description: Function library for Helm charts
     digest: a9f65ee38d07e9e682590caf99190e9aae11f996115442d0c8d090552d91dc01
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -106,7 +131,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.956301345Z"
+    created: "2022-11-18T10:40:42.91740372Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -131,7 +156,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.9599771Z"
+    created: "2022-11-18T10:40:42.920135344Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -157,7 +182,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.970658959Z"
+    created: "2022-11-18T10:40:42.922805769Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -183,7 +208,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.973714204Z"
+    created: "2022-11-18T10:40:42.925500294Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -208,7 +233,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.976694348Z"
+    created: "2022-11-18T10:40:42.928158618Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -234,7 +259,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.979594691Z"
+    created: "2022-11-18T10:40:42.931828751Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -259,7 +284,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T10:39:33.982623136Z"
+    created: "2022-11-18T10:40:42.934507376Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -274,4 +299,4 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/sonarr-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-18T10:39:33.949696747Z"
+generated: "2022-11-18T10:40:42.907336128Z"

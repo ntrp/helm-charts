@@ -1,7 +1,7 @@
 ---
 image:
-  repository: lscr.io/linuxserver/sabnzbd
-  tag: 3.7.0
+  repository: lscr.io/linuxserver/radarr
+  tag: 4.2.4.6635-ls157
   pullPolicy: IfNotPresent
 
 env:
@@ -15,4 +15,4 @@ service:
   main:
     ports:
       http:
-        port: 8080
+        port: 7878

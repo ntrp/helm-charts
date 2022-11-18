@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.847890644Z"
+    created: "2022-11-18T08:44:48.957336214Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -36,7 +36,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.816439744Z"
+    created: "2022-11-18T08:44:48.928929593Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -80,7 +80,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2022-11-18T08:43:26.845242343Z"
+    created: "2022-11-18T08:44:48.952736946Z"
     description: Function library for Helm charts
     digest: a9f65ee38d07e9e682590caf99190e9aae11f996115442d0c8d090552d91dc01
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -106,7 +106,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.81920665Z"
+    created: "2022-11-18T08:44:48.932168141Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -122,6 +122,32 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/jellyfin-1.0.0.tgz
     version: 1.0.0
+  prowlarr:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            **BREAKING**: Updated library version to 1.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    created: "2022-11-18T08:44:48.935405889Z"
+    dependencies:
+    - name: common
+      repository: https://ntrp.github.io/helm-charts
+      version: 1.0.1
+    description: Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs
+      base stack to integrate with your various PVR apps.
+    digest: 545cebaee7a4b8352619382241632382e435ff21a6f7d4c7ba0934639cb53fcb
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: ivan.g.ortolan@gmail.com
+      name: ntrp
+    name: prowlarr
+    urls:
+    - https://ntrp.github.io/helm-charts/apps/prowlarr-1.0.0.tgz
+    version: 1.0.0
   radarr:
   - annotations:
       artifacthub.io/changes: |-
@@ -132,7 +158,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.822331269Z"
+    created: "2022-11-18T08:44:48.93883404Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -157,7 +183,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.837350842Z"
+    created: "2022-11-18T08:44:48.943387007Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -183,7 +209,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.840137348Z"
+    created: "2022-11-18T08:44:48.946338551Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -208,7 +234,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:43:26.84282035Z"
+    created: "2022-11-18T08:44:48.949595399Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -223,4 +249,4 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/sonarr-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-18T08:43:26.813305625Z"
+generated: "2022-11-18T08:44:48.923371511Z"

@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:36:29.983497Z"
+    created: "2022-11-18T08:38:51.647358653Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -36,7 +36,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:36:29.964543863Z"
+    created: "2022-11-18T08:38:51.630497912Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -80,7 +80,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2022-11-18T08:36:29.980647895Z"
+    created: "2022-11-18T08:38:51.644816832Z"
     description: Function library for Helm charts
     digest: a9f65ee38d07e9e682590caf99190e9aae11f996115442d0c8d090552d91dc01
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -96,6 +96,32 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/library/common-1.0.1.tgz
     version: 1.0.1
+  jellyfin:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            **BREAKING**: Updated library version to 1.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    created: "2022-11-18T08:38:51.633048533Z"
+    dependencies:
+    - name: common
+      repository: https://ntrp.github.io/helm-charts
+      version: 1.0.1
+    description: A Free Software Media System that puts you in control of managing
+      and streaming your media.
+    digest: d58a01d2b78e1ddf1f665c97600d8a1ef49fdb8188838da4770e02414c753304
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: ivan.g.ortolan@gmail.com
+      name: ntrp
+    name: jellyfin
+    urls:
+    - https://ntrp.github.io/helm-charts/apps/jellyfin-1.0.0.tgz
+    version: 1.0.0
   radarr:
   - annotations:
       artifacthub.io/changes: |-
@@ -106,7 +132,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:36:29.967264968Z"
+    created: "2022-11-18T08:38:51.637297569Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -131,7 +157,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:36:29.971087776Z"
+    created: "2022-11-18T08:38:51.640002692Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -156,7 +182,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2022-11-18T08:36:29.97825049Z"
+    created: "2022-11-18T08:38:51.642542013Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -171,4 +197,4 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/sonarr-1.0.0.tgz
     version: 1.0.0
-generated: "2022-11-18T08:36:29.961146356Z"
+generated: "2022-11-18T08:38:51.627740589Z"

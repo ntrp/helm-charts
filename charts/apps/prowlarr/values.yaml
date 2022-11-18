@@ -1,0 +1,18 @@
+---
+image:
+  repository: lscr.io/linuxserver/prowlarr
+  tag: nightly-0.4.10.2086-ls442
+  pullPolicy: IfNotPresent
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true
+
+service:
+  main:
+    ports:
+      http:
+        port: 9696

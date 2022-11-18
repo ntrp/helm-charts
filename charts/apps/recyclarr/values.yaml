@@ -1,0 +1,12 @@
+---
+image:
+  repository: recyclarr/recyclarr
+  tag: v2.6.1
+  pullPolicy: IfNotPresent
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true

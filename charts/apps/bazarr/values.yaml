@@ -1,0 +1,18 @@
+---
+image:
+  repository: lscr.io/linuxserver/bazarr
+  tag: v1.1.2-ls172
+  pullPolicy: IfNotPresent
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true
+
+service:
+  main:
+    ports:
+      http:
+        port: 6767

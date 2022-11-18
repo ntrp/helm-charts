@@ -10,3 +10,7 @@ env:
 persistence:
   config:
     enabled: true
+
+service:
+  main:
+    enabled: false

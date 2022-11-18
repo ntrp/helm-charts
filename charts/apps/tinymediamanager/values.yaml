@@ -1,0 +1,19 @@
+---
+image:
+  repository: tinymediamanager/tinymediamanager
+  tag: 4.3.5
+  pullPolicy: IfNotPresent
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true
+    mountPath: /data
+
+service:
+  main:
+    ports:
+      http:
+        port: 4000

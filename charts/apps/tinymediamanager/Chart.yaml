@@ -1,0 +1,21 @@
+---
+apiVersion: v2
+description: tinyMediaManager is a media management tool written in Java/Swing
+name: tinymediamanager
+version: 1.0.0
+kubeVersion: ">=1.22.0-0"
+maintainers:
+  - name: ntrp
+    email: ivan.g.ortolan@gmail.com
+dependencies:
+  - name: common
+    repository: https://ntrp.github.io/helm-charts
+    version: 1.0.1
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: |
+        **BREAKING**: Updated library version to 1.0.1.
+      links:
+        - name: Common library chart definition
+          url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml

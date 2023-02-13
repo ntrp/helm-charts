@@ -10,7 +10,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.07360042Z"
+    created: "2023-02-13T09:43:49.500489024Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -36,7 +36,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.041989669Z"
+    created: "2023-02-13T09:43:49.462998632Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -61,7 +61,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.0447969Z"
+    created: "2023-02-13T09:43:49.465868262Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -105,7 +105,7 @@ entries:
         - kind: fixed
           description: Fix NOTES always showing ingress protocol as http
     apiVersion: v2
-    created: "2023-02-13T09:42:41.071123092Z"
+    created: "2023-02-13T09:43:49.497819096Z"
     description: Function library for Helm charts
     digest: a9f65ee38d07e9e682590caf99190e9aae11f996115442d0c8d090552d91dc01
     home: https://github.com/ntrp/helm-charts/tree/main/charts/library/common
@@ -131,7 +131,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.047355128Z"
+    created: "2023-02-13T09:43:49.468788893Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -156,7 +156,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.051806078Z"
+    created: "2023-02-13T09:43:49.473569243Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -182,7 +182,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.054372706Z"
+    created: "2023-02-13T09:43:49.476342972Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -208,7 +208,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.056913434Z"
+    created: "2023-02-13T09:43:49.479305403Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -233,7 +233,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.059437362Z"
+    created: "2023-02-13T09:43:49.482067932Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -259,7 +259,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.06195119Z"
+    created: "2023-02-13T09:43:49.486365676Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -284,7 +284,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.064457818Z"
+    created: "2023-02-13T09:43:49.488908003Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -309,7 +309,7 @@ entries:
             - name: Common library chart definition
               url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
     apiVersion: v2
-    created: "2023-02-13T09:42:41.068881067Z"
+    created: "2023-02-13T09:43:49.491435629Z"
     dependencies:
     - name: common
       repository: https://ntrp.github.io/helm-charts
@@ -324,4 +324,31 @@ entries:
     urls:
     - https://ntrp.github.io/helm-charts/apps/tinymediamanager-1.0.0.tgz
     version: 1.0.0
-generated: "2023-02-13T09:42:41.039006935Z"
+  vaultwarden:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: |
+            **BREAKING**: Updated library version to 1.0.1.
+          links:
+            - name: Common library chart definition
+              url: https://github.com/ntrp/helm-charts/blob/main/charts/library/common/Chart.yaml
+    apiVersion: v2
+    created: "2023-02-13T09:43:49.493960356Z"
+    dependencies:
+    - name: common
+      repository: https://ntrp.github.io/helm-charts
+      version: 1.0.1
+    description: Alternative implementation of the Bitwarden server API written in
+      Rust and compatible with upstream Bitwarden clients, perfect for self-hosted
+      deployment where running the official resource-heavy service might not be ideal.
+    digest: 6a5887801f8e17b3c0ceb0101dab84e1e1df35d830fbd11547dc1cb669eefe57
+    kubeVersion: '>=1.22.0-0'
+    maintainers:
+    - email: ivan.g.ortolan@gmail.com
+      name: ntrp
+    name: vaultwarden
+    urls:
+    - https://ntrp.github.io/helm-charts/apps/vaultwarden-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-02-13T09:43:49.459706198Z"

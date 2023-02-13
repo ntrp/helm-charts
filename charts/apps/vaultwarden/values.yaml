@@ -1,0 +1,18 @@
+---
+image:
+  repository: vaultwarden/server
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true
+
+service:
+  main:
+    ports:
+      http:
+        port: 80

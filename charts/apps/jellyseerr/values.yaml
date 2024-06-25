@@ -1,0 +1,18 @@
+---
+image:
+  repository: fallenbagel/jellyseerr
+  tag: latest
+  pullPolicy: Always
+
+env:
+  TZ: Europe/London
+
+persistence:
+  config:
+    enabled: true
+
+service:
+  main:
+    ports:
+      http:
+        port: 5055
